@@ -1,0 +1,10 @@
+---
+- name: Wait for 6 minutes
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: Wait for 6 minutes
+      ansible.builtin.wait_for:
+        timeout: 360
