@@ -1,0 +1,10 @@
+---
+- name: This playbook should fail
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: Wait for 6 minutes
+      ansible.builtin.this_does_exist:
+        value: "missing"
